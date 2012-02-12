@@ -1,0 +1,182 @@
+html,body {
+  margin:0;
+  height:100%;
+  background:#999 url(../img/body-bg.png) repeat top center;
+  background-attachment:fixed;
+}
+
+/* PAGE
+ * ==== */
+#page-wrap {
+  position:relative;
+  margin:0 -30px 0 -30px;
+  padding:0 30px 0 30px;
+  min-height:500px;
+  background-color:#fff;
+  -webkit-box-shadow:0 0 7px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow:0 0 7px rgba(0, 0, 0, 0.5);
+          box-shadow:0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+/* HEADER
+ * ====== */
+header {
+  position:fixed;
+  z-index:1000;
+  margin:0 -30px;
+  width:1000px;
+  height:50px;
+  /* Background Gradient */
+  background-color: #2c2c2c;
+  background-image: -moz-linear-gradient(top, #333333, #222222);
+  background-image: -ms-linear-gradient(top, #333333, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+  background-image: -webkit-linear-gradient(top, #333333, #222222);
+  background-image: -o-linear-gradient(top, #333333, #222222);
+  background-image: linear-gradient(top, #333333, #222222);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+  /* Shadow */
+  -webkit-box-shadow:0 2px 3px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow:0 2px 3px rgba(0, 0, 0, 0.25);
+          box-shadow:0 2px 3px rgba(0, 0, 0, 0.25);
+}
+  header h1 {
+    line-height:50px;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:25px;
+    font-weight:300;
+    color:#fff;
+  }
+  #header-logo {
+    float:left;
+    margin:2px 7px 0 2px;
+  }
+
+    
+/* CONTENT
+ * ======= */ 
+#content {
+  margin-left:-20px;
+  padding:70px 20px 20px;
+}
+  #content h1,
+  #content h2,
+  #content h3,
+  #content h4,
+  #content h5 {
+    font-weight:300;
+  }
+  #content h1 { font-size:32px; }
+  #content h2 { font-size:28px; }
+  #content h3 { font-size:24px; }
+
+/* CONTENT BANNER
+ * ============== */
+#content-banner {
+  margin:-20px -30px 20px;
+  width:750px;
+  min-height:240px;
+  background-color:#000;
+  overflow:hidden;
+}
+  #content-banner > img {
+    float:left;
+  }
+
+  
+/* FOOTER
+ * ====== */ 
+footer {
+  margin:0 -30px;
+  padding:30px;
+  background-color:#222;
+  color:#fff;
+}
+
+
+
+/* SIDENAV HEADER
+ * ============== */
+
+#sidenav-header {
+  position:fixed;
+  z-index:1001;
+  margin-right:-30px;
+  width:250px;
+  height:50px;
+  /* Background Gradient */
+  background-color: #cc0000;
+  background-image: -moz-linear-gradient(top, #dd0000, #bb0000);
+  background-image: -ms-linear-gradient(top, #dd0000, #bb0000);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dd0000), to(#bb0000));
+  background-image: -webkit-linear-gradient(top, #dd0000, #bb0000);
+  background-image: -o-linear-gradient(top, #dd0000, #bb0000);
+  background-image: linear-gradient(top, #dd0000, #bb0000);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dd0000', endColorstr='#cc0000', GradientType=0);
+}
+ #sidenav-header-logo {
+   width:250px;
+   height:50px;
+   background:url(../img/header-cmu-logo.png) center center no-repeat;
+ }
+
+
+/* SIDENAV CONTENT
+ * =============== */
+ 
+/* Viewport wraps the content. Necessary for jQuery NiceScroll. */
+#sidenav-content-viewport {
+  position:fixed;
+  margin:50px 0 0;
+  width:250px;
+  outline:none;
+  background-color:#eee;
+}
+#sidenav-content {}
+
+/* SIDENAV CONTENT LINKS
+ * ===================== */
+#sidenav-content ul {
+  margin:0;
+  list-style:none;
+}
+  #sidenav-content ul > li > a,
+  #sidenav-content ul > li > b,
+  #sidenav-content ul > li > span {
+    display:block;
+    padding:5px 10px;
+    border-bottom:1px solid #ddd;
+  }
+    #sidenav-content ul > li > a:hover {
+      text-decoration:none;
+      background-color:#08c;
+      color:#fff;
+    }
+    #sidenav-content ul > li > span {
+      color:#666;
+    }
+
+  #sidenav-content > ul > li > ul > li > a,
+  #sidenav-content > ul > li > ul > li > b,
+  #sidenav-content > ul > li > ul > li > span {
+    padding-left:20px;
+  }
+  
+  #sidenav-content > ul > li > a:after {
+    content:" »";
+  }
+
+/* SIDENAV SEARCH
+ * ============== */
+#sidenav-search {
+  padding-top:10px !important;
+  padding-bottom:10px !important;
+}
+#sidenav-search > form,
+#sidenav-search > form > .input-append,
+#sidenav-search > form > .input-append > input {
+  margin:0;
+}
+  #sidenav-search > form > .input-append > input { width:180px }

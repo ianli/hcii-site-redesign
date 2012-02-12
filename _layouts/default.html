@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content="Human-Computer Interaction Institute @ Carnegie Mellon University" />
+  <link rel="author" href="humans.txt" type="text/plain" />
+  
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <!-- Le styles -->
+  <link href="stylesheets/bootstrap-2.0.0.css" rel="stylesheet" />
+  <!-- <link href="stylesheets/bootstrap-responsive-2.0.0.css" rel="stylesheet"> -->
+
+  <link href="stylesheets/style.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container" id="page">
+  <div id="page-wrap">
+    
+    <div class="row">
+      
+      <div class="span9">
+        <!-- HEADER -->
+        <!--========-->
+        <header>
+          <img id="header-logo" src="img/header-hcii-logo.png" width="71" height="79" />
+          <h1>Human-Computer Interaction Institute</h1>
+        </header>
+        
+        <!-- CONTENT -->
+        <!--=========-->
+        <div id="content">
+          {{ content }}
+        </div>
+        
+        <!-- FOOTER -->
+        <!--========-->
+        <footer>
+          <div class="row">
+            <div class="span3">
+              <address>
+                <b>HCII</b><br/>
+                Carnegie Mellon University<br/>
+                5000 Forbes Ave.<br/>
+                Pittsburgh, PA 15213-3891
+              </address>
+              
+              <a href="http://www.hcii.cmu.edu/">HCII</a> is part of the 
+              <a href="http://www.cs.cmu.edu/">School of Computer Science</a> at
+              <a href="http://www.cmu.edu/">Carnegie Mellon University</a>
+            </div>
+            <div class="span3">
+              
+            </div>
+          </div>
+        </footer>
+      </div>
+      
+      <!-- SIDENAV -->
+      <!-- ======= -->
+      <div class="span3" style="position:relative;">
+        <div id="sidenav-header">
+          <div id="sidenav-header-logo"></div>
+        </div>
+        <div id="sidenav-content-viewport">
+          <div id="sidenav-content">
+            <ul>
+              <li>
+                <!-- SEARCH -->
+                <span id="sidenav-search">
+                  <form>
+                    <div class="input-append">
+                      <input type="text" placeholder="Search" />
+                      <a class="btn add-on"><i class="icon-search"></i></a>
+                    </div>
+                  </form>
+                </span>
+              </li>
+              <li>
+                <a href="http://www.hcii.cmu.edu/about-hcii"><b>About</b></a>
+                <ul>
+                  <li><a href="http://www.hcii.cmu.edu/contact-us">Contact Us </a></li>
+                  <li><a href="http://www.hcii.cmu.edu/visit-hcii">Visit HCII</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/hcii-facilities">Facilities</a></li>
+                </ul>
+              </li>
+              <li>
+                <span><b>News</b></span>
+                <ul>
+                  <li><a href="http://www.hcii.cmu.edu/news/stories">HCII News</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/news/in-the-media">HCII in the Media</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/hcii-calendar">HCII Calendar</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/news/seminar">HCII Seminar Series</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/z-axis">Z-Axis Seminar Series</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="http://www.hcii.cmu.edu/admissions"><b>Admissions</b></a>
+                <ul>
+                  <li><a href="http://www.hcii.cmu.edu/phd-program-application">PhD Admissions</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/masters-program-application">Masters Admissions</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/applying-undergraduate-major">Undergraduate Admissions </a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="http://www.hcii.cmu.edu/academics"><b>Academics</b></a>
+                <ul>
+                  <li></li>
+                  <li><a href="http://www.hcii.cmu.edu/courses">Courses</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/phd-program">PhD Program</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/masters-program-pittsburgh">Masters Program</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/undergraduate-program">Undergraduate Program</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="http://www.hcii.cmu.edu/research"><b>Research</b></a>
+                <ul>
+                  <li><a href="http://www.hcii.cmu.edu/research/projects">Research Projects</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/research/publications">Publications</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/project-sponsors">Research Sponsors</a></li>
+                </ul>
+              </li>
+              <li>
+                <span><b>People</b></span>
+                <ul>
+                  <li><a href="http://www.hcii.cmu.edu/people/faculty">Faculty</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/people/affiliated-faculty">Affiliated Faculty</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/people/phd">PhD Students</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/people/mhci">Masters Students</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/people/bhci">Undergraduate Students</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/people/administrative-staff">Administrative Staff</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/people/technical-staff">Technical Staff</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/people/phd-alumni">PhD Alumni</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/people/mhci-alumni">Masters Alumni</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/people/bhci-alumni">Undergraduate Alumni</a></li>
+                </ul>
+              </li>
+              <li>
+                <span><b>Jobs</b></span>
+                <ul>
+                  <li><a href="http://www.hcii.cmu.edu/careers/jobs">Jobs for students and alumni (not at CMU)</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/careers/research-opportunities">Research opportunities for students at the HCII</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/careers/jobs-at-the-hcii">Faculty and staff jobs at the HCII</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Javascripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="javascripts/libs/jquery-1.7.1.min.js"><\/script>')</script>
+<script src="javascripts/libs/bootstrap-collapse-2.0.0.js"></script>
+<script src="javascripts/libs/jquery-nicescroll.min.js"></script>
+<script>
+  $(document).ready(function () {
+  
+    $(window).resize(function () {
+      var h = $(this).height(),
+          sidenavHeaderHeight = $('#sidenav-header').height(); 
+      $('#page-wrap').css('min-height', h);
+      $('#sidenav-content-viewport').height(h - sidenavHeaderHeight);
+    })
+    .trigger('resize');
+  
+    $('#sidenav-content-viewport').niceScroll('#sidenav-content', {
+      cursoropacitymin: 0.25,
+      cursoropacitymax: 0.75,
+      railoffset: {
+        top: 5,
+        left: 5
+      },
+      cursorborder: 'none'
+    });
+  });
+</script>
+
+<!-- Google Analytics -->
+<script>
+  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+</body>
+</html>
