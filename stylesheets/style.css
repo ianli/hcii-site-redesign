@@ -57,19 +57,38 @@ header {
 /* CONTENT
  * ======= */ 
 #content {
-  margin-top:50px;
-  margin-left:-20px;
+  margin:50px -20px 0 -20px;
   padding:20px 20px 20px;
   min-height:500px;
 }
   #content h1,
   #content h2,
   #content h3 {
+    margin-bottom:0.67em;
+    line-height:1.1em;
     font-weight:300;
   }
   #content h1 { font-size:32px; }
   #content h2 { font-size:28px; }
   #content h3 { font-size:24px; }
+  
+  #content h1 > a,
+  #content h2 > a,
+  #content h3 > a {
+    color:#333;
+    text-decoration:none;
+  }
+    #content h1 > a:hover,
+    #content h2 > a:hover,
+    #content h3 > a:hover {
+      color:#08c;
+      text-decoration:underline;
+    }
+  
+  
+  #content .thumbnail > .caption {
+    font-size:11px;
+  }
 
 /* CONTENT BANNER
  * ============== */
@@ -198,3 +217,9 @@ footer {
   margin:0;
 }
   #sidenav-search > form > .input-append > input { width:180px }
+
+
+
+
+/* NEWS LIST
+ * ========= */
