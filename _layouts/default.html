@@ -51,13 +51,56 @@
                 5000 Forbes Ave.<br/>
                 Pittsburgh, PA 15213-3891
               </address>
-              
-              <a href="http://www.hcii.cmu.edu/">HCII</a> is part of the 
-              <a href="http://www.cs.cmu.edu/">School of Computer Science</a> at
-              <a href="http://www.cmu.edu/">Carnegie Mellon University</a>
+              <p>
+                <a href="http://www.hcii.cmu.edu/">HCII</a> is part of the <br/>
+                <a href="http://www.cs.cmu.edu/">School of Computer Science</a> at<br/>
+                <a href="http://www.cmu.edu/">Carnegie Mellon University</a>
+              </p>
             </div>
-            <div class="span3">
-              
+            <div class="span2">
+              <p>
+                <b>Apply</b><br/>
+                <a href="http://www.hcii.cmu.edu/phd-program-application">PhD Program</a><br/>
+                <a href="http://www.hcii.cmu.edu/masters-program-application">Masters Program</a><br/>
+                <a href="http://www.hcii.cmu.edu/applying-undergraduate-major">Undergraduate Program</a>
+              </p>
+              <p>
+                <b>Resources</b><br/>
+                <a href="http://www.hcii.cmu.edu/hcii-calendar">Events Calendar</a><br/>
+                <a href="http://www.hcii.cmu.edu/courses">Courses</a><br/>
+                <a href="http://www.hcii.cmu.edu/hcii-facilities">Facilities</a>
+              </p>
+            </div>
+            <div class="span2">
+              <p>
+                <b>About</b><br/>
+                <a href="http://www.hcii.cmu.edu/contact-us">Contact Us </a><br/>
+                <a href="http://www.hcii.cmu.edu/visit-hcii">Visit Us</a>
+              </p>
+              <p>
+                <b>Directory</b><br/>
+                <a href="http://www.hcii.cmu.edu/people/faculty">Faculty</a><br/>
+                <a href="http://www.hcii.cmu.edu/people/administrative-staff">Staff</a><br/>
+                <a href="http://www.hcii.cmu.edu/people/phd">Students</a><br/>
+                <a href="http://www.hcii.cmu.edu/people/phd-alumni">Alumni</a><br/>
+              </p>
+            </div>
+            <div class="span2">
+              <p>
+                <b>Colophon</b><br/>
+                Code <a href="http://en.wikipedia.org/wiki/HTML5">HTML5</a>, 
+                  <a href="http://en.wikipedia.org/wiki/CSS3#CSS3">CSS3</a>,
+                  <a href="http://jquery.com/">jQuery</a>,
+                  <a href="http://code.google.com/p/jquery-nicescroll/">Nicescroll</a><br/>
+                Font <a href="http://en.wikipedia.org/wiki/Helvetica#Neue_Helvetica_.281983.29">Helvetica Neue</a><br/>
+                Layout <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>
+              </p>
+              <p>
+                Site design by <a href="http://ianli.com">Ian Li</a>
+              </p>
+              <p>
+                Contact the <a href="hciiwebmaster@cs.cmu.edu">webmaster</a>
+              </p>
             </div>
           </div>
         </footer>
@@ -87,16 +130,13 @@
                 <a href="http://www.hcii.cmu.edu/about-hcii"><b>About</b></a>
                 <ul>
                   <li><a href="http://www.hcii.cmu.edu/contact-us">Contact Us </a></li>
-                  <li><a href="http://www.hcii.cmu.edu/visit-hcii">Visit HCII</a></li>
-                  <li><a href="http://www.hcii.cmu.edu/hcii-facilities">Facilities</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/visit-hcii">Visit Us</a></li>
                 </ul>
               </li>
               <li>
-                <span><b>News</b></span>
+                <a href="http://www.hcii.cmu.edu/news/stories"><b>News</b></a>
                 <ul>
-                  <li><a href="http://www.hcii.cmu.edu/news/stories">HCII News</a></li>
-                  <li><a href="http://www.hcii.cmu.edu/news/in-the-media">HCII in the Media</a></li>
-                  <li><a href="http://www.hcii.cmu.edu/hcii-calendar">HCII Calendar</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/hcii-calendar">Events Calendar</a></li>
                   <li><a href="http://www.hcii.cmu.edu/news/seminar">HCII Seminar Series</a></li>
                   <li><a href="http://www.hcii.cmu.edu/z-axis">Z-Axis Seminar Series</a></li>
                 </ul>
@@ -125,6 +165,7 @@
                   <li><a href="http://www.hcii.cmu.edu/research/projects">Research Projects</a></li>
                   <li><a href="http://www.hcii.cmu.edu/research/publications">Publications</a></li>
                   <li><a href="http://www.hcii.cmu.edu/project-sponsors">Research Sponsors</a></li>
+                  <li><a href="http://www.hcii.cmu.edu/hcii-facilities">Facilities</a></li>
                 </ul>
               </li>
               <li>
@@ -162,19 +203,30 @@
 <!-- Javascripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="javascripts/libs/jquery-1.7.1.min.js"><\/script>')</script>
-<script src="javascripts/libs/bootstrap-collapse-2.0.0.js"></script>
+<script src="javascripts/libs/bootstrap-transition-2.0.0.js"></script>
+<script src="javascripts/libs/bootstrap-carousel-2.0.0.js"></script>
 <script src="javascripts/libs/jquery-nicescroll.min.js"></script>
 <script>
   $(document).ready(function () {
-  
+    
+    // Resize the page, content, and sidenav to fit the window.
     $(window).resize(function () {
       var h = $(this).height(),
-          sidenavHeaderHeight = $('#sidenav-header').height(); 
+          headerHeight = $('header').height(),
+          footerHeight = $('footer').height();
+      
       $('#page-wrap').css('min-height', h);
-      $('#sidenav-content-viewport').height(h - sidenavHeaderHeight);
+      $('#content').css('min-height', h - headerHeight - footerHeight);
+      $('#sidenav-content-viewport').height(h - headerHeight);
     })
     .trigger('resize');
-  
+    
+    // Prepare the carousel.
+    $('.carousel').carousel({
+      interval: 10000
+    });
+    
+    // Setup jQuery Nice Scroll for the sidenav.
     $('#sidenav-content-viewport').niceScroll('#sidenav-content', {
       cursoropacitymin: 0.25,
       cursoropacitymax: 0.75,
@@ -184,6 +236,7 @@
       },
       cursorborder: 'none'
     });
+    
   });
 </script>
 
