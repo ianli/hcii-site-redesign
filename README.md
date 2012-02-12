@@ -44,8 +44,8 @@ The home page should be a lively page that is updated constantly. It should make
 
 ### News
 
-The old site separated news between HCII News and HCII in the Media. I think these pages should be merged into just one section.
+The old site separated news between HCII News and HCII in the Media. I think these pages should be merged into just one section for the following reasons:
 
-1. Users should not have to visit separate pages to see the latest news about HCII.
-2. These pages are not updated often enough to warrant their own pages.
-3. It reduces clutter on the home page. The old site had 
+1. The old site makes the user visit two separate pages to see all the latest news about HCII. This also meant that users had to subscribe to two RSS feeds.
+2. These pages are not updated often enough to warrant their own pages. Putting them together would make the pages actively updated.
+3. The old site had a column for HCII News and another for HCII in the Media. The two columns make it harder to scan and clutters the home page. Merged together, they are displayed as a list and is more easily scanned.
