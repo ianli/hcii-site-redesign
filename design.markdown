@@ -25,6 +25,13 @@ Example Pages
 
 <hr class="space" />
 
+Code
+----
+
+The code for this redesign is available on GitHub at https://github.com/ianli/hcii-site-redesign.
+
+<hr class="space" />
+
 Layout
 ------
 
