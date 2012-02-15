@@ -31,9 +31,9 @@
       // Resize the page, content, and sidenav to fit the window.
       $(window).resize(function () {
         var h = $(this).height(),
-            headerHeight = $('header').height(),
+            headerHeight = $('.navbar-inner').height(),
             footerHeight = $('footer').height();
-
+        
         $('#page-wrap').css('min-height', h);
         $('#content').css('min-height', h - headerHeight - footerHeight);
         $('#sidenav-content-viewport').height(h - headerHeight);
