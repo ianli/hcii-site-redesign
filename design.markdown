@@ -12,45 +12,46 @@ Design Document
 
 This is the design document of [Ian Li](http://ianli.com)'s redesign of the [HCII web site](http://www.hcii.cmu.edu).
 
-Preview Pages
+Example Pages
 -------------
 
 * [Home Page](home.html)
-* [News Article Page](article.html)
+* [About HCII Page](about.html)
 * [Faculty Page](faculty.html)
 * [Publications Page](publications.html)
-* [About HCII Page](about.html)
+* [Example Article Page](article.html)
 
-Philosophy
-----------
+Layout
+------
 
-The layout emphasizes scanning from top to bottom.
-Instead of hiding links behind drop-down menus or breaking down related pages into several p, 
+The design of the layout emphasizes scanning from top to bottom instead of breaking content into separate pages or navigation into separate menu bars. This property is evident in the example pages and the side navigation.
 
-Font
-----
+Elements
+--------
+
+### Side Navigation
+
+The side navigation is a good example of how vertical scanning is emphasized in the layout. The old design's top bar hides links behind drop-down menus. This is inefficient because the user has to look at each of the menus to find the link they want. Instead, the side navigation lists all the relevant pages on the site, which allows the user to easily scan from top to bottom.
+
+### Content Column
+
+The content column also exemplifies scrolling. The example pages are 
+
+### Banner
+
+Carousel use
+
+### Top Bar
+
+The 
+
+
+#### Font Choice
 
 The font I used for the title and headings is [Helvetica Neue](http://en.wikipedia.org/wiki/Helvetica#Neue_Helvetica_.281983.29).
 Helvetica Neue is humanist and ubiquitous, which reflects HCII's human-centered approach to technology that is permeating our lives.
 It also complements Carnegie Mellon's wordmark font [Bauer Bodoni](http://en.wikipedia.org/wiki/Bodoni).
 
-Users
------
-
-The web site is meant to serve different
-
-Layout Elements
----------------
-
-### Side Navigation
-
-The side navigation is a good example of how vertical scanning is emphasized in the layout.
-The old design's top bar hides links behind drop-down menus.
-This is inefficient because the user has to look at each of the menus to find the link they want.
-Instead, the side navigation lists the many relevant pages on the site, which allows the user to easily scan from top to bottom. 
-
-Sidebar emphasizes scanning.
-Instead of a top bar where there are menus, users can scan the list of links immediately to find what they are looking for.
 
 Pages
 -----
@@ -69,3 +70,4 @@ The old site separated news between HCII News and HCII in the Media. I think the
 1. The old site makes the user visit two separate pages to see all the latest news about HCII. This also meant that users had to subscribe to two RSS feeds.
 2. These pages are not updated often enough to warrant their own pages. Putting them together would make the pages actively updated.
 3. The old site had a column for HCII News and another for HCII in the Media. The two columns make it harder to scan and clutters the home page. Merged together, they are displayed as a list and is more easily scanned.
+
