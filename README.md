@@ -11,11 +11,11 @@ A detailed description of the design is at http://ianli.github.com/hcii-site-red
 
 ## Example Pages
 
-* [Home Page](home.html)
-* [About HCII Page](about.html)
-* [Faculty Page](faculty.html)
-* [Publications Page](publications.html)
-* [Example Article Page](article.html)
+* [Home Page](http://ianli.github.com/hcii-site-redesign/index.html)
+* [About HCII Page](http://ianli.github.com/hcii-site-redesign/about.html)
+* [Faculty Page](http://ianli.github.com/hcii-site-redesign/faculty.html)
+* [Publications Page](http://ianli.github.com/hcii-site-redesign/publications.html)
+* [Example Article Page](http://ianli.github.com/hcii-site-redesign/article.html)
 
 
 ## File Structure

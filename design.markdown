@@ -15,7 +15,7 @@ This is the design document of [Ian Li](http://ianli.com)'s redesign of the [HCI
 Example Pages
 -------------
 
-* [Home Page](home.html)
+* [Home Page](index.html)
 * [About HCII Page](about.html)
 * [Faculty Page](faculty.html)
 * [Publications Page](publications.html)
