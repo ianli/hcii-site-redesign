@@ -58,7 +58,11 @@ Each page has a banner with an image in it. The image is representative of the t
 
 ### Top Bar
 
-The top bar is fixed to the top, even when the users scrolls through the page. This is helpful, so that it's always clear that they are on the HCII web site and they can easily return to the home page.
+The top bar is fixed to the top, even when the users scrolls through the page. This is helpful in multiple ways:
+
+- It's always clear that they are on the HCII web site.
+- There is an easy way to return to the home page.
+- The link 'Back to top' appears when the user scrolls. Clicking on this link is a fast way to return to the top of the page.
 
 #### Font Choice
 
