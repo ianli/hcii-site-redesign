@@ -15,9 +15,49 @@
   
   <!-- Le styles -->
   <link href="stylesheets/bootstrap-2.0.0.css" rel="stylesheet" />
-  <!-- <link href="stylesheets/bootstrap-responsive-2.0.0.css" rel="stylesheet"> -->
+  <!-- <link href="stylesheets/bootstrap-responsive-2.0.0.css" rel="stylesheet" /> -->
 
   <link href="stylesheets/style.css" rel="stylesheet" />
+  
+  <!-- Javascripts -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="javascripts/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  <script src="javascripts/libs/bootstrap-transition-2.0.0.js"></script>
+  <script src="javascripts/libs/bootstrap-carousel-2.0.0.js"></script>
+  <script src="javascripts/libs/jquery-nicescroll.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      // Resize the page, content, and sidenav to fit the window.
+      $(window).resize(function () {
+        var h = $(this).height(),
+            headerHeight = $('header').height(),
+            footerHeight = $('footer').height();
+
+        $('#page-wrap').css('min-height', h);
+        $('#content').css('min-height', h - headerHeight - footerHeight);
+        $('#sidenav-content-viewport').height(h - headerHeight);
+      })
+      .trigger('resize');
+
+      // Prepare the carousel.
+      $('.carousel').carousel({
+        interval: 10000
+      });
+
+      // Setup jQuery Nice Scroll for the sidenav.
+      $('#sidenav-content-viewport').niceScroll('#sidenav-content', {
+        cursoropacitymin: 0.25,
+        cursoropacitymax: 0.75,
+        railoffset: {
+          top: 5,
+          left: 5
+        },
+        cursorborder: 'none'
+      });
+
+    });
+  </script>
 </head>
 <body>
 
@@ -206,46 +246,6 @@
     </div>
   </div>
 </div>
-
-<!-- Javascripts -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="javascripts/libs/jquery-1.7.1.min.js"><\/script>')</script>
-<script src="javascripts/libs/bootstrap-transition-2.0.0.js"></script>
-<script src="javascripts/libs/bootstrap-carousel-2.0.0.js"></script>
-<script src="javascripts/libs/jquery-nicescroll.min.js"></script>
-<script>
-  $(document).ready(function () {
-    
-    // Resize the page, content, and sidenav to fit the window.
-    $(window).resize(function () {
-      var h = $(this).height(),
-          headerHeight = $('header').height(),
-          footerHeight = $('footer').height();
-      
-      $('#page-wrap').css('min-height', h);
-      $('#content').css('min-height', h - headerHeight - footerHeight);
-      $('#sidenav-content-viewport').height(h - headerHeight);
-    })
-    .trigger('resize');
-    
-    // Prepare the carousel.
-    $('.carousel').carousel({
-      interval: 10000
-    });
-    
-    // Setup jQuery Nice Scroll for the sidenav.
-    $('#sidenav-content-viewport').niceScroll('#sidenav-content', {
-      cursoropacitymin: 0.25,
-      cursoropacitymax: 0.75,
-      railoffset: {
-        top: 5,
-        left: 5
-      },
-      cursorborder: 'none'
-    });
-    
-  });
-</script>
 
 <!-- StatCounter -->
 <script type="text/javascript">
