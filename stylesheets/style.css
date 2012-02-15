@@ -30,7 +30,9 @@ hr.space {
   float:left;
   margin:-8px 7px 0 -28px;
 }
-
+  .navbar .nav > li > a {
+    padding:15px 10px 16px;
+  }
 
 /* PAGE
  * ==== */

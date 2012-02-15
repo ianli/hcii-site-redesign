@@ -56,6 +56,15 @@
         },
         cursorborder: 'none'
       });
+      
+      // Listen to scrolling.
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+          $('#back-to-top').fadeIn();
+        } else {
+          $('#back-to-top').fadeOut();
+        }
+      });
 
     });
   </script>
@@ -67,10 +76,17 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="./">
-        <img class="navbar-logo" src="img/header-hcii-logo.png" width="71" height="79" />
-        Human-Computer Interaction Institute
-      </a>
+      <div class="row">
+        <div class="span9">
+          <ul class="nav pull-right">
+            <li><a id="back-to-top" href="#" onclick="$(window).scrollTop(0); return false;" style="display:none;">Back to top &uarr;</a></li>
+          </ul>
+          <a class="brand" href="./">
+            <img class="navbar-logo" src="img/header-hcii-logo.png" width="71" height="79" />
+            Human-Computer Interaction Institute
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
