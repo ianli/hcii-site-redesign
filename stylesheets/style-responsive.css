@@ -23,6 +23,10 @@
     .navbar .nav.pull-right {
       margin-top:-5px;
     }
+    
+  #page .pull-right {
+    float:none;
+  }
   
   #sidenav {
     display:none;
@@ -76,6 +80,10 @@
       margin:-8px 7px 0 -13px;
     }
   
+  #back-to-top {
+    font-weight:normal;
+  }
+    
   #sidenav-header-logo {
     width:196px;
     background-size:85%;
@@ -89,6 +97,10 @@
 @media (max-width: 980px) {
   .navbar .nav.pull-right {
     float:right;
+  }
+  
+  #back-to-top {
+    font-weight:normal;
   }
 }
 
