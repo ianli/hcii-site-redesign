@@ -46,6 +46,14 @@
   #sidenav-search {
     margin-top:10px;
   }
+  
+  footer {
+    margin:0 -30px 0 -30px;
+  }
+  
+  #content-banner {
+    margin:-20px -30px 20px -30px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 980px) {
