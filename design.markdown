@@ -37,6 +37,10 @@ Layout
 
 The design of the layout emphasizes scanning from top to bottom instead of breaking content into separate pages or navigation into separate menu bars. This property is evident in the example pages and the side navigation.
 
+### Responsive
+
+The layout is responsive. The elements of the layout scales depending on the screen resolution and device, so that the web site is viewable on a laptop, a tablet, or a mobile device.
+
 <hr class="space" />
 
 Page Elements

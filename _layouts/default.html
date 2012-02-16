@@ -16,22 +16,24 @@
   
   <!-- Le styles -->
   <link href="stylesheets/bootstrap-2.0.0.css" rel="stylesheet" />
-  <!-- <link href="stylesheets/bootstrap-responsive-2.0.0.css" rel="stylesheet" /> -->
+  <link href="stylesheets/bootstrap-responsive-2.0.0.css" rel="stylesheet" />
 
   <link href="stylesheets/style.css" rel="stylesheet" />
+  <link href="stylesheets/style-responsive.css" rel="stylesheet" />
   
   <!-- Javascripts -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="javascripts/libs/jquery-1.7.1.min.js"><\/script>')</script>
   <script src="javascripts/libs/bootstrap-transition-2.0.0.js"></script>
   <script src="javascripts/libs/bootstrap-carousel-2.0.0.js"></script>
+  <script src="javascripts/libs/bootstrap-collapse-2.0.0.js"></script>
   <script src="javascripts/libs/jquery-nicescroll.min.js"></script>
   <script>
     $(document).ready(function () {
 
       // Resize the page, content, and sidenav to fit the window.
       $(window).resize(function () {
-        var h = $(this).height(),
+        var h = $(window).height(),
             headerHeight = $('.navbar-inner').height(),
             footerHeight = $('footer').height();
         
@@ -57,6 +59,15 @@
         cursorborder: 'none'
       });
       
+      // Handle clicks to the navbar button.
+      var showOrHide = true;
+      $('#sidenav-toggle').click(function () {
+        $('#sidenav').toggle(showOrHide);
+        showOrHide = !showOrHide;
+        
+        $("#sidenav-content-viewport").getNiceScroll().resize();
+      });
+      
       // Listen to scrolling.
       $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
@@ -76,6 +87,11 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
+      <a class="btn btn-navbar" id="sidenav-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
       <div class="row">
         <div class="span9">
           <ul class="nav pull-right">
@@ -172,7 +188,7 @@
       
       <!-- SIDENAV -->
       <!-- ======= -->
-      <div class="span3" style="position:relative;">
+      <div id="sidenav" class="span3">
         <div id="sidenav-header">
           <div id="sidenav-header-logo"></div>
         </div>
@@ -183,10 +199,7 @@
                 <!-- SEARCH -->
                 <span id="sidenav-search">
                   <form>
-                    <div class="input-append">
-                      <input type="text" placeholder="Search" />
-                      <a class="btn add-on"><i class="icon-search"></i></a>
-                    </div>
+                    <input type="text" placeholder="Search" name="search" class="span3" />
                   </form>
                 </span>
               </li>
