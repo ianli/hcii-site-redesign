@@ -118,9 +118,15 @@ hr.space {
 footer {
   margin:0 -20px 0 -30px;
   padding:30px 20px 30px 30px;
-  background-color:#222;
-  color:#fff;
+  background-color:#111;
+  color:#999;
 }
+  footer a {
+    color:#ddd;
+  }
+  footer a:hover {
+    color:#fff;
+  }
 
 
 /* SIDENAV

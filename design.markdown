@@ -28,18 +28,18 @@ Example Pages
 Code
 ----
 
-The code for this redesign is available on GitHub at https://github.com/ianli/hcii-site-redesign.
+The code for this redesign is available on GitHub at [https://github.com/ianli/hcii-site-redesign](https://github.com/ianli/hcii-site-redesign).
 
 <hr class="space" />
 
 Layout
 ------
 
-The design of the layout emphasizes scanning from top to bottom instead of breaking content into separate pages or navigation into separate menu bars. This property is evident in the example pages and the side navigation.
+The design of the layout emphasizes scanning from top to bottom instead of breaking content into separate pages or splitting navigation into separate menu bars. This property is evident in the flowing content of the example pages and the long list of links in the side navigation.
 
 ### Responsive
 
-The layout is responsive. The elements of the layout scales depending on the screen resolution and device, so that the web site is viewable on a laptop, a tablet, or a mobile device.
+The layout is responsive. The elements of the layout scales and resizes to adapt to the screen resolution of the device. The readability of the site is maintained between different devices. To preview how this works, check this web site using a browser on the desktop and a mobile device. If you only have access to a desktop computer, try resizing the width of the browser.
 
 <hr class="space" />
 
@@ -94,3 +94,18 @@ The old site separated news between HCII News and HCII in the Media. I think the
 2. These pages are not updated often enough to warrant their own pages. Putting them together would make the pages actively updated.
 3. The old site had a column for HCII News and another for HCII in the Media. The two columns make it harder to scan and clutters the home page. Merged together, they are displayed as a list and is more easily scanned.
 
+
+Colophon
+--------
+
+Code:
+[HTML5](http://en.wikipedia.org/wiki/HTML5),
+[CSS3](http://en.wikipedia.org/wiki/CSS3#CSS3),
+[jQuery](http://jquery.com/),
+[NiceScroll](http://code.google.com/p/jquery-nicescroll/)
+
+Font:
+[Helvetica Neue](http://en.wikipedia.org/wiki/Helvetica#Neue_Helvetica_.281983.29)
+
+Layout:
+[Twitter Bootstrap](http://twitter.github.com/bootstrap/)
