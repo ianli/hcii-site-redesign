@@ -10,7 +10,7 @@ title: HCII Site Design Document
 Design Document
 ===============
 
-This is the design document of [Ian Li](http://ianli.com)'s redesign of the [HCII web site](http://www.hcii.cmu.edu).
+This is the design document of a redesign of the [HCII web site](http://www.hcii.cmu.edu).
 
 <hr class="space" />
 
